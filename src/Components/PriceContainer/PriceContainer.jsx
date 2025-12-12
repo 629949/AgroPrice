@@ -1,11 +1,13 @@
 import './Price.css'
 
-export default function PriceContainer({name, Price, width, height})
+export default function PriceContainer({name, Price, width, height, BorderRadius})
 {
 
     const Styles = {
         height: height,
-        width: width
+        width: width,
+        borderRadius: BorderRadius
+   
     }
 
     return (

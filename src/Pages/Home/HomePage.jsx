@@ -17,6 +17,9 @@ export default function HomePage() {
       <PriceContainer
       name= {'Maize'}
       Price = {'800'}
+      height = {'150px'}
+      width = {'170px'}
+      BorderRadius = {'15px'}
       />
       {/* <PriceContainer/>
       <PriceContainer/>
