@@ -7,7 +7,7 @@ import './Home.css'
 
 export default function HomePage() {
   return (
-    <div>
+    <div className='homediv'>
         
 
       <h1>Welcome to the Home Page</h1>
@@ -21,9 +21,19 @@ export default function HomePage() {
       width = {'170px'}
       BorderRadius = {'15px'}
       />
-      {/* <PriceContainer/>
-      <PriceContainer/>
-      <PriceContainer/> */}
+      <PriceContainer
+      name= {'Maize'}
+      Price = {'800'}
+      height = {'150px'}
+      width = {'170px'}
+      BorderRadius = {'15px'}
+      /> <PriceContainer
+      name= {'Maize'}
+      Price = {'800'}
+      height = {'150px'}
+      width = {'170px'}
+      BorderRadius = {'15px'}
+      />
 
     </div>
 <AdminUserButton
