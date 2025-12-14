@@ -2,19 +2,39 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: rgb(196, 193, 193)
+    background-color: rgb(196, 193, 193);
+    color: black;
 }
 
-div {
-    background-color: white;
-    height: screen;
-    color: black
+ 
+/* .homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    width: screen-width;
+} */
 
-}
 
 .homediv {
     background-color: rgb(196, 193, 193);
-    height: 100vh;
-    padding: 20px;
+    height: auto;
+   
+
 }
     
+
+.pricecontainerdiv {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

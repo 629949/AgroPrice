@@ -7,13 +7,22 @@ import './Home.css'
 
 export default function HomePage() {
   return (
-    <div className='homediv'>
+    <div >
+
+      <nav>
+                <h2>MyMarket</h2>
+                <AdminUserButton
+        name="Go to Admin Page"
+        />
+      </nav>
         
+<div  className='homediv'>
+
 
       <h1>Welcome to the Home Page</h1>
 
-      
-    <div>
+      {/* price container */}
+    <div className='pricecontainerdiv'>
       <PriceContainer
       name= {'Maize'}
       Price = {'800'}
@@ -36,9 +45,9 @@ export default function HomePage() {
       />
 
     </div>
-<AdminUserButton
-name="Go to Admin Page"
-/>
+
+    </div>
+
     </div>
   )
 }
