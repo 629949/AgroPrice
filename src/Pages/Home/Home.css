@@ -2,18 +2,6 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-<<<<<<< HEAD
-    background-color: rgb(196, 193, 193)
-}
-
-div {
-    background-color: white;
-    height: screen;
-    color: black
-
-}
-    
-=======
     background-color: rgb(196, 193, 193);
     color: black;
 }
@@ -50,4 +38,3 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
->>>>>>> 419533749fac1fad7242834e2c84c66f09859dfa
