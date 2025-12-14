@@ -14,17 +14,17 @@ const onClick = () => {
 };
 
 const style = {
-    backgroundColor: "white",
-                hoverColor: "#e0e0e0",
-              width: "150px",
-              height: "40px",
+              backgroundColor: "'#0c0e70da'",
+              hoverColor: "#e0e0e0",
+              width: "200px",
+              height: "50px",
               fontSize: "16px",
               fontWeight: "bold",
               borderRadius: "8px",
-              color: "#ffffff",
+              color: "#fcf5f5ff",
               padding: "10px 20px",
               margin: "0 10px",
-              textdecoration: "none"
+              textDecoration: "none"
 
 }
 
