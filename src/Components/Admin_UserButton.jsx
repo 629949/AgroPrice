@@ -14,7 +14,7 @@ const onClick = () => {
 };
 
 const style = {
-              backgroundColor: "'#0c0e70da'",
+              backgroundColor: "'#1114e6fb'",
               hoverColor: "#e0e0e0",
               width: "200px",
               height: "50px",
@@ -33,7 +33,7 @@ const isAdmin = location.pathname === '/Admin';
 
   return (
     <button onClick={onClick} style={style}>
-        <a>{name}</a>
+        <p>{name}</p>
     </button>
   )
 }

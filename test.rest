@@ -1,0 +1,7 @@
+@baseUrl = https://ojrbpoippzqdfgtufjwo.supabase.co
+@annonKey = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9qcmJwb2lwcHpxZGZndHVmandvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ2MzM3MTUsImV4cCI6MjA4MDIwOTcxNX0.zAiuakbt4RGlQcsOvijM9iqh3yrHvDVsPUagXeHBLjE
+
+### Get all products
+GET {{baseUrl}}/rest/v1/ProductPrices
+apikey: {{annonKey}}
+Authorization: Bearer {{annonKey}}  

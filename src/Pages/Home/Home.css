@@ -2,9 +2,8 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: rgb(196, 193, 193);
     color: black;
-    
+    background-color: #CBDCEB;
     
 }
 
@@ -12,22 +11,25 @@ body {
 .homemain {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    align-items: top;
+    justify-content: center;
     font-family: Arial, sans-serif;
     width: 115rem;
-    
-    height: 55rem;
     margin: 0;
     padding: 0;
 }
 
 
 .homediv {
-    background-color: rgb(196, 193, 193);
-    height: 120rem;
-   width: 100%;
-
+   width: 115rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    background-color: transparent;
 }
     
 
@@ -36,7 +38,9 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
+    height: 70rem;
+    width: 100rem;
 }
 
 nav {
@@ -44,10 +48,23 @@ nav {
     justify-content: space-around;
     gap: 80px;
     align-items: center;
-    border-bottom: 1px solid black;
     width: 115rem;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
+}
+
+.header {
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #f0f0f0;  
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80rem;
+    background-color: #0046FF;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 50px;
 }
 
