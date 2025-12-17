@@ -1,6 +1,7 @@
 import './Price.css'
 
-import { Supabase } from '../../src/SupabaseClient.js'
+import { supabase } from "../../SupabaseClient";
+
 import {useState, useEffect} from 'react'
 
 export default function PriceContainer({name, Price, width, height, BorderRadius})
@@ -16,36 +17,54 @@ export default function PriceContainer({name, Price, width, height, BorderRadius
     }
 
 
-    const [state, useState] = useState([])
+  
       const [loading, setLoading] = useState(true)
-      const [error, setError] = useState (null)
+      const [error, setError] = useState(null)
+      const [prices, setPrices] = useState([])
     
       useEffect(() => {
         const fetchData = async () =>{
+          setLoading(true)
           try {
             const {data, error} = await supabase
             .from('ProductPrices')
             .select('*')
+
+            if (error) {
+              throw error
+            }
+            setPrices(data)
           }
           catch (error) {
             setError('Error fetching data')
             console.error('Error fetching data:', error)
           }
+          finally {
+          setLoading(false)
+          }
         }
+
         fetchData()
+
+ ;
+
       }, [])
+
+      if (loading) {
+        return <div>Loading...</div>
+      }else if (error) {
+        return <div>{error}</div>
+      }
 
     return (
         <div className='price-container' style={Styles}>
 
-            <div className='price-info'>
-
-           {prices.map(price => (
-          <li key={price.id}>
-            {price.price_date} — UGX {price.price_ugx_per_kg}
-          </li>
-        ))}
-
+            <div className='price-info'>{prices.map((Price) => (
+              <div key={Price.id}>
+                <h3>{name}</h3>
+                <p>${Price.Price}</p>
+              </div>
+            ))}
             </div>
            
 
