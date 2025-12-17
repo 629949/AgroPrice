@@ -34,3 +34,8 @@ jspm_packages/
 .env
 .env.local
 .env.*.local
+
+
+# REST Client env files
+.env.rest
+rest-client.env.json
