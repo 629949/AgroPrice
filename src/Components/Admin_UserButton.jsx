@@ -1,7 +1,7 @@
 import {useLocation, useNavigate} from 'react-router-dom';
 
 
-export default function AdminUserButton({link1, link2, name}) {
+export default function AdminUserButton({ name}) {
 const location = useLocation();
 const navigate = useNavigate();
 
@@ -13,12 +13,27 @@ const onClick = () => {
     }
 };
 
+const style = {
+              backgroundColor: "'#1114e6fb'",
+              hoverColor: "#e0e0e0",
+              width: "200px",
+              height: "50px",
+              fontSize: "16px",
+              fontWeight: "bold",
+              borderRadius: "8px",
+              color: "#fcf5f5ff",
+              padding: "10px 20px",
+              margin: "0 10px",
+              textDecoration: "none"
+
+}
+
 const isAdmin = location.pathname === '/Admin';
 
 
   return (
-    <button onClick={onClick}>
-        <a>{name}</a>
+    <button onClick={onClick} style={style}>
+        <p>{name}</p>
     </button>
   )
 }
