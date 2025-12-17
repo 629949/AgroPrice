@@ -1,6 +1,7 @@
 import React from 'react'
 import AdminUserButton from '../../Components/Admin_UserButton.jsx'
 import PriceContainer from '../../Components/PriceContainer/PriceContainer.jsx'
+import sideNav from '../../Components/sideNav.jsx'
 
 import {useState, useEffect} from 'react'
 
@@ -10,14 +11,9 @@ import './Home.css'
 
 export default function HomePage() {
 
-  
-
-
-
-
   return (
 
-    <>
+
     
     <div className='homemain'>
 
@@ -25,6 +21,7 @@ export default function HomePage() {
                 <h2>MyMarket</h2>
                 <AdminUserButton
         name="Go to Admin Page"
+
         
         />
       </nav>
@@ -32,6 +29,9 @@ export default function HomePage() {
      
         
 <div  className='homediv'>
+
+
+  <sideNav/>
 
   <div className="header">
  <h1>Welcome to the Home Page</h1>
@@ -70,6 +70,6 @@ export default function HomePage() {
 
     </div>
 
-    </>
+   
   )
 }
