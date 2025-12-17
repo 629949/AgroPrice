@@ -48,23 +48,4 @@ nav {
     justify-content: space-around;
     gap: 80px;
     align-items: center;
-    width: 115rem;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
 }
-
-.header {
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    background-color: #f0f0f0;  
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 80rem;
-    background-color: #0046FF;
-    color: white;
-    text-align: left;
-    padding-left: 20px;
-    margin-top: 50px;
-}
-
