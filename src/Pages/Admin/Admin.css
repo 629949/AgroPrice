@@ -50,8 +50,19 @@ input {
     background-color: #fafafa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 10;
+    color: black
+}
+
+input[type=date] {
+    color: black;
 }
 
 #notes {
     height: 200px;
+}
+
+button:hover {
+    background-color: white;
+    color: black; 
+    font-style: bold
 }

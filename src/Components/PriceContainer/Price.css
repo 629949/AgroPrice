@@ -1,0 +1,62 @@
+.price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 2px solid rgba(185, 183, 183, 0.459);
+    border-radius: 2px;
+    padding: 10px;
+   margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(196, 190, 190, 0.055);
+
+    
+}
+
+.additional-info {
+    margin-top: 0,10px,0,0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        align-items: center;
+    gap: 40px;
+}   
+
+
+.wholesaletag {
+    background-color: #1fac4e9a;
+    color: white;
+    padding: 5px;
+    border-radius: 25px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+    width: fit-content;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(185, 179, 179, 0.555);
+}
+
+.price-info p {
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.updatedtag {
+    font-size: 12px;
+    color: #555555;
+    font-weight: bold;
+}

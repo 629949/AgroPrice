@@ -26,6 +26,10 @@ function Admin(){
 
         <label htmlFor="notes">Notes</label>
         <input id="notes" />
+
+        <button>
+            Submit
+        </button>
      </form>
             </div>
        
