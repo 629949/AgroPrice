@@ -3,7 +3,6 @@ body {
     padding: 0;
     margin: 0;
     color: black;
-    background-color: #CBDCEB;
     
 }
 
@@ -48,4 +47,14 @@ nav {
     justify-content: space-around;
     gap: 80px;
     align-items: center;
+}
+
+
+.header {
+    border: 2px solid rgba(185, 183, 183, 0.459);
+    width: 80%;
+    padding-left: 10px;
+    background-color: rgb(2, 84, 206);
+    border-radius: 25px;
+    color: white;
 }
