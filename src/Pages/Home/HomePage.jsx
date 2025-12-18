@@ -19,8 +19,9 @@ export default function HomePage() {
       try {
         const { data, error } = await supabase
           .from("ProductPrices")
-          .select("*")
-         
+          .select("Price, created_at")
+          .order("created_at", { ascending: false })
+          .limit(1);
 
         if (error) throw error;
 
@@ -36,17 +37,22 @@ export default function HomePage() {
     fetchPrices();
   }, []);
 
+
+  //latesprices
+  const latestPrices = prices[0];
+
   // 3️⃣ HANDLE STATES
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
   // 4️⃣ PREPARE GRAPH DATA
   const graphData = prices
-    .filter(item => item && item.created_at && item.Price != null)
     .map(item => ({
       date: item.created_at.split("T")[0],
-      price: item.Price, // ⚠️ match DB column name exactly
+      price: item.Price,
     }));
+
+  
 
   // 5️⃣ RENDER UI
   return (
@@ -57,17 +63,27 @@ export default function HomePage() {
       </nav>
 
       <div className="homediv">
-        <SideNav />
+
+        <div className="sideNav">
+<SideNav />
+        </div>
+        
 
         <div className="header">
+
+          <div className="welcome-section">
+
           <h1>Welcome to the Home Page</h1>
           <p>Explore our products and prices below.</p>
-        </div>
+        
+          </div>
+       
 
         {/* PRICE CARDS */}
         <div className="pricecontainerdiv">
           {prices.map(item => (
             <PriceContainer
+              data={latestPrices}
               key={item.id}
               name={item.product_name ?? "Maize"}
               Price={item.Price}
@@ -81,6 +97,7 @@ export default function HomePage() {
         <div className="graphsection">
           <PriceGraph data={graphData} type="line" />
           <PriceGraph data={graphData} type="bar" />
+        </div>
         </div>
 
         {/* GRAPH */}

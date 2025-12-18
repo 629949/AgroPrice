@@ -49,7 +49,7 @@ export default function PriceContainer({name, Price, width, height, BorderRadius
         fetchData()
 
  ;
- 
+
       }, [])
 
       if (loading) {

@@ -26,7 +26,7 @@ body {
 .homediv {
    width: 115rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -57,7 +57,7 @@ nav {
 }
 
 
-.header {
+.welcome-section {
     border: 2px solid rgba(185, 183, 183, 0.459);
     width: 80%;
     padding-left: 10px;
