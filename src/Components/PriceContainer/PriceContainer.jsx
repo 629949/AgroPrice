@@ -4,7 +4,7 @@ import { supabase } from "../../SupabaseClient";
 
 import {useState, useEffect} from 'react'
 
-export default function PriceContainer({name, Price, width, height, BorderRadius})
+export default function PriceContainer({name, Price, width, height, BorderRadius, data})
 {
 
     const Styles = {
@@ -29,6 +29,8 @@ export default function PriceContainer({name, Price, width, height, BorderRadius
             const {data, error} = await supabase
             .from('ProductPrices')
             .select('*')
+              .order("created_at", { ascending: false })
+    .limit(1);
 
             if (error) {
               throw error
@@ -47,7 +49,7 @@ export default function PriceContainer({name, Price, width, height, BorderRadius
         fetchData()
 
  ;
-
+ 
       }, [])
 
       if (loading) {

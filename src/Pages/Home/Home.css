@@ -76,3 +76,12 @@ nav h2 {
     font-weight: bold;
     color: #0254ce;
 }
+
+.graphsection {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
