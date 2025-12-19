@@ -14,17 +14,17 @@ const onClick = () => {
 };
 
 const style = {
-              backgroundColor: "#1114e6fb",
+              backgroundColor: "#edeef5fb",
               hoverColor: "#e0e0e0",
-              width: "200px",
-              height: "50px",
+              width: "60px",
+              height: "60px",
               fontSize: "16px",
               fontWeight: "bold",
-              borderRadius: "8px",
               color: "white",
-              padding: "10px 20px",
-              margin: "0 10px",
-              textDecoration: "none"
+              padding: "0",
+              margin: "0 ",
+              textDecoration: "none",
+              borderRadius: "50px",
 
 
 }
@@ -34,7 +34,7 @@ const isAdmin = location.pathname === '/Admin';
 
   return (
     <button onClick={onClick} style={style}>
-        {name}
+       <img src="./src/Images/Contacts icon.jpg" alt="userIcon" style={style} />
     </button>
   )
 }
