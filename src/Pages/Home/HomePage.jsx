@@ -1,9 +1,11 @@
+// 'use client';
+
 import { useState, useEffect } from "react";
-import AdminUserButton from "../../Components/Admin_UserButton.jsx";
 import PriceContainer from "../../Components/PriceContainer/PriceContainer.jsx";
 import SideNav from "../../Components/sideNav.jsx";
 import PriceGraph from "../../Components/graphComponent.jsx";
 import { supabase } from "../../SupabaseClient";
+import topNav from "../../Components/topNav/topNav.jsx";
 
 import "./Home.css";
 
@@ -57,11 +59,13 @@ export default function HomePage() {
   // 5️⃣ RENDER UI
   return (
     <div className="homemain">
-      <nav>
-        <h2>MyMarket</h2>
-        <AdminUserButton name="Go to Admin Page" />
-      </nav>
 
+      <div className="topNav">
+          <topNav />
+
+      </div>
+    
+   
       <div className="homediv">
 
         <div className="sideNav">
