@@ -62,18 +62,22 @@ export default function HomePage() {
   return (
     <div className="homemain">
 
+      
+        <div className="sideNav">
+<SideNav />
+        </div>
+        
+
+   
+      <div className="homediv">
+
+
       <div className="topNav">
           <TopNav />
 
       </div>
     
-   
-      <div className="homediv">
 
-        <div className="sideNav">
-<SideNav />
-        </div>
-        
 
         <div className="header">
 
