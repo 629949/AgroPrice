@@ -1,11 +1,13 @@
 // 'use client';
 
+
+// myImports
 import { useState, useEffect } from "react";
 import PriceContainer from "../../Components/PriceContainer/PriceContainer.jsx";
 import SideNav from "../../Components/sideNav.jsx";
 import PriceGraph from "../../Components/graphComponent.jsx";
 import { supabase } from "../../SupabaseClient";
-import topNav from "../../Components/topNav/topNav.jsx";
+import TopNav from "../../Components/TopNav/TopNav.jsx";
 
 import "./Home.css";
 
@@ -61,7 +63,7 @@ export default function HomePage() {
     <div className="homemain">
 
       <div className="topNav">
-          <topNav />
+          <TopNav />
 
       </div>
     

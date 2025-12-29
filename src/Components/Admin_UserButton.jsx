@@ -14,7 +14,7 @@ const onClick = () => {
 };
 
 const style = {
-              backgroundColor: "#edeef5fb",
+              backgroundColor: "#2d3891fb",
               hoverColor: "#e0e0e0",
               width: "60px",
               height: "60px",
