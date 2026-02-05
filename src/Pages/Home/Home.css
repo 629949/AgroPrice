@@ -39,10 +39,11 @@ body {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 120px;
     justify-content: space-evenly;
-    /* height: 70rem; */
+    height: 170rem;
     width: 100rem;
+    border: 2px solid rgba(185, 183, 183, 0.459);
 }
 
 

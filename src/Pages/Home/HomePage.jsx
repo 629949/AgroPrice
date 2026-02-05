@@ -25,7 +25,7 @@ export default function HomePage() {
           .from("ProductPrices")
           .select("Price, created_at")
           .order("created_at", { ascending: false })
-          .limit(1);
+          // .limit(1);
 
         if (error) throw error;
 
@@ -55,7 +55,7 @@ export default function HomePage() {
       date: item.created_at.split("T")[0],
       price: item.Price,
     }));
-
+console.log("Graph Data:", graphData);
   
 
   // 5️⃣ RENDER UI
@@ -93,7 +93,7 @@ export default function HomePage() {
         <div className="pricecontainerdiv">
           {prices.map(item => (
             <PriceContainer
-              data={latestPrices}
+              data={item}
               key={item.id}
               name={item.product_name ?? "Maize"}
               Price={item.Price}
@@ -101,7 +101,12 @@ export default function HomePage() {
               width="300px"
               BorderRadius="15px"
             />
-          ))}
+
+            
+          ))
+          
+          }
+
         </div>
 
         <div className="graphsection">

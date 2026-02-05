@@ -16,7 +16,7 @@ export default function PriceGraph({ data, type = "line" }) {
   }
 
   return (
-    <div style={{ width: 100, height: 300 }}>
+    <div style={{ width: 1400, height: 500 }}>
       <ResponsiveContainer>
         {type === "bar" ? (
           <BarChart data={data}>
