@@ -7,7 +7,7 @@ import {
   YAxis,
   Tooltip,
   CartesianGrid,
-  ResponsiveContainer,
+  ResponsiveContainer, 
 } from "recharts";
 
 export default function PriceGraph({ data, type = "line" }) {
@@ -16,7 +16,7 @@ export default function PriceGraph({ data, type = "line" }) {
   }
 
   return (
-    <div style={{ width: "60%", height: 300 }}>
+    <div style={{ width: 100, height: 300 }}>
       <ResponsiveContainer>
         {type === "bar" ? (
           <BarChart data={data}>

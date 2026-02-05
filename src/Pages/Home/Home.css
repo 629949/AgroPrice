@@ -14,7 +14,7 @@ body {
     align-items: top;
     justify-content: space-between;
     font-family: Arial, sans-serif;
-    width: 115rem;
+    
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -22,7 +22,7 @@ body {
 
 
 .homediv {
-   width: 95rem;
+    width: 95rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,8 @@ body {
     margin-top: 20px;
     justify-content: center;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
+    border: 2px solid rgba(185, 183, 183, 0.459);
 }
 
 
@@ -74,14 +75,14 @@ body {
 /* div holding the side nav */
 
 .sideNav {
-    border: 1px solid rgba(185, 183, 183, 0.459);
+    border: 2px solid rgba(218, 214, 214, 0.459);
     border-radius: 10px;
     height: 100vh;
     position: fixed;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
-    
+    z-index: 500;
 }
 
 .topNav {
