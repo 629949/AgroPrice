@@ -3,7 +3,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     width: 80%;
+    height: 400px;
     border: 1px solid #ccc;
+    border-radius: 5px;
     place-items: center;
 }
 
@@ -18,7 +20,8 @@
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-    width: 150px;
+    width: 180px;
+    height: 50px;
     border: none;
     background-color: #71e075;
     color: white;
@@ -26,7 +29,13 @@
     transition: background-color 0.3s;
     display: inline-block;
     justify-items: center;
+    align-content: center;
     text-align: center;
+}
+
+button span {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 .cropButtons button:hover {
