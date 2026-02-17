@@ -1,5 +1,8 @@
 import React from 'react'
 import "./NewCrop.css"
+import sideNav from '../../Components/sideNav.jsx'
+
+
 
 export default function AddCrop() {
   return (
@@ -10,6 +13,8 @@ export default function AddCrop() {
         <img src="./src/images/home.svg" alt="back" />
       </button>
       </div>
+
+<sideNav />
 
       <h1>Add Crop to follow</h1>
       <button>Clear</button>

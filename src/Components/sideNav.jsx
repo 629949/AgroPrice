@@ -6,12 +6,6 @@ import "./sideNav.css"
 export default function sideNav({height,width}) 
 {
 
-    // const style ={
-    //     height:"screen",
-    //     width:"400px",
-    //     color: 'black'
-    // }
-
 
     return (
         <>
@@ -24,6 +18,11 @@ export default function sideNav({height,width})
                         <li><Link to="/admin">Admin</Link></li>
                     </ul>
                 </nav>
+
+               
+               <button >
+<img src="./src/images/moon.svg" alt="darkmode toggle" />
+                </button> 
             </div>
         
         </>
